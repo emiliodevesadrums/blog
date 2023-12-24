@@ -60,3 +60,22 @@ https://emiliodevesa.wordpress.com/2021/02/16/java-tres-en-raya/
 * Webserver: Simple multithread webserver
 https://emiliodevesa.wordpress.com/2013/06/05/un-servidor-web-sencillo-en-java/
 
+### PASCAL
+Free Pascal and GNU Pascal ISO 10206 implementations
+* 2007.10.15: ascii.pas
+* 2007.10.29: datos.pas
+* 2007.10.30: bisiesto.pas
+* 2007.11.05: rombo.pas, romboConRepeat.pas, triangulo.pas
+* 2007.11.07: descomponerFactoresPrimos.pas, multiplos3.pas, sumaParImpar.pas, triadasPi.pas
+* 2007.11.12: mostrarMenuFiguras.pas (single-file) Find a modular, improved version here: https://emiliodevesa.wordpress.com/2023/08/04/shapes/
+* 2007.11.21: calendario.pas (single-file). Find an improved version here: https://emiliodevesa.wordpress.com/2023/08/08/pascalendar/
+* 2007.11.22: gastosSemana.pas
+* 2007.11.26: carteroAburrido.pas
+* 2007.12.03: alumnoFecha.pas, comentarios.pas
+* 2007.12.13: cribaEratostenes.pas
+* 2007.12.17: ackermann.pas
+* 2008.11.22: moda.pas, VerModa.pas
+* 2009.10.25: etiquetas.pas
+* 2009.12.17: cuadrado.pas
+* 2010.05.31: factorial.pas, fibonacci.pas
+* 2010.09.19: CalcularNIF.pas
