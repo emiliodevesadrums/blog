@@ -4,7 +4,7 @@
  * post</a>
  *
  * @author Emilio Devesa (http://emiliodevesa.wordpress.com)
- * @version 0.1
+ * @version 0.2
  */
 public class Amigos {
 
@@ -14,23 +14,44 @@ public class Amigos {
      * @param args Argumentos introducidos en la consola al invocar el programa
      */
     public static void main(String[] args) {
-        Persona p1 = new Persona("Pepe", 37, "Lugo", 611223344);
+        // Instanciamos dos objetos p1 p2 de la clase Persona con y sin parametros
+        Persona p1 = new Persona("Manolo", 25, "Coruna", 981765432);
         Persona p2 = new Persona();
 
-        System.out.println("P1:");
-        System.out.println("Nombre: " + p1.consultarNombre());
-        System.out.println("Edad: " + p1.consultarEdad());
-        System.out.println("Ciudad: " + p1.consultarCiudad());
-        System.out.println("Telefono: " + p1.consultarTelefono());
+        // Mostramos los datos que almacenan inicialmente
+        System.out.println("Datos iniciales: ");
+        System.out.println();
 
-        System.out.println("P2:");
-        System.out.println("Nombre: " + p2.consultarNombre());
-        System.out.println("Edad: " + p2.consultarEdad());
-        System.out.println("Ciudad: " + p2.consultarCiudad());
-        System.out.println("Telefono: " + p2.consultarTelefono());
+        System.out.println("p1: ");
+        /*
+         * System.out.println ("nombre: "+p1.consultarNombre());
+         * System.out.println ("edad: "+p1.consultarEdad());
+         * System.out.println ("ciudad: "+p1.consultarCiudad());
+         * System.out.println ("telf: "+p1.consultarTelefono());
+         */
+        p1.mostrarDatos(); // Sustituye a las cuatro lineas anteriores
+        System.out.println();
 
-        p2.cambiarEdad(20);
-        System.out.println("Edad P2: " + p2.consultarEdad());
+        System.out.println("p2: ");
+        p2.mostrarDatos();
+        System.out.println();
+
+        // Modificamos los valores de p2 con los metodos de la clase Persona
+        System.out.println("Cambiamos datos de p2:");
+        p2.cambiarNombre("Ramon");
+        p2.cambiarEdad(12);
+        p2.cambiarCiudad("Sevilla");
+        p2.cambiarTelefono(654321987);
+        System.out.println();
+
+        // De nuevo, mostramos los datos de cada objeto p1 p2
+        System.out.println("Mostramos de nuevo p1: ");
+        p1.mostrarDatos();
+        System.out.println();
+
+        System.out.println("Mostramos de nuevo p2: ");
+        p2.mostrarDatos();
+        System.out.println();
     }
 
 }
@@ -39,7 +60,7 @@ public class Amigos {
  * Una clase que modela una persona y almacena nombre, edad, ciudad y teléfono
  *
  * @author Emilio Devesa (http://emiliodevesa.wordpress.com)
- * @version 0.1
+ * @version 0.2
  */
 class Persona {
 
@@ -74,12 +95,39 @@ class Persona {
     }
 
     /**
+     * Cambia el nombre de la persona
+     *
+     * @param n El nuevo valor del dato nombre
+     */
+    public void cambiarNombre(String n) {
+        this.nombre = n;
+    }
+
+    /**
      * Cambia la edad de la persona
      *
      * @param e El nuevo valor del dato edad
      */
     public void cambiarEdad(int e) {
         this.edad = e;
+    }
+
+    /**
+     * Cambia el nombre de la ciudad
+     *
+     * @param c El nuevo valor del dato ciudad
+     */
+    public void cambiarCiudad(String c) {
+        this.ciudad = c;
+    }
+
+    /**
+     * Cambia el teléfono de la persona
+     *
+     * @param t El nuevo valor del dato teléfono
+     */
+    public void cambiarTelefono(int t) {
+        this.telefono = t;
     }
 
     /**
@@ -116,6 +164,16 @@ class Persona {
      */
     public int consultarTelefono() {
         return telefono;
+    }
+
+    /**
+     * Imprimir en pantalla los datos de esta persona
+     */
+    public void mostrarDatos() {
+        System.out.println("nombre: " + this.consultarNombre());
+        System.out.println("edad: " + this.consultarEdad());
+        System.out.println("ciudad: " + this.consultarCiudad());
+        System.out.println("telf: " + this.consultarTelefono());
     }
 
 }
