@@ -15,3 +15,8 @@ More info: https://emiliodevesa.wordpress.com/2016/06/21/customizando-la-xiaomi-
 ## CODE
 Programming exercises and small code examples for learning purposes on several programming languages.
 
+### C
+* HashTable:
+From Leo Robinovitch's: 'A simple hash table in C'
+See: https://theleo.zone/posts/hashmap-in-c/
+For learning purposes
