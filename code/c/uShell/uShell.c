@@ -32,7 +32,7 @@ int countcmdargs (char *input, char * cmdargs []){
 }
 
 void printAuth(void){
-    printf("Emilio Devesa (https://emiliodevesa.wordpress.com), 2023\n");
+    printf("Emilio Devesa (https://emiliodevesa.wordpress.com/, 2023)\n");
 }
 
 char *cwd(void){
