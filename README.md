@@ -29,4 +29,5 @@ https://emiliodevesa.wordpress.com/2016/03/01/creando-una-shell-de-linux-iii/
 https://emiliodevesa.wordpress.com/2016/03/02/creando-una-shell-de-linux-iv/
 Find a better, updated version that works on MacOS on https://emiliodevesa.wordpress.com/2023/07/15/ushell-para-macos/
 
-
+* uShell: Example of a shell implementation in C for MacOS
+More info: https://emiliodevesa.wordpress.com/2023/07/15/ushell-para-macos/
