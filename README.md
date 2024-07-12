@@ -82,3 +82,4 @@ Free Pascal and GNU Pascal ISO 10206 implementations
 * 2009.12.17: cuadrado.pas
 * 2010.05.31: factorial.pas, fibonacci.pas
 * 2010.09.19: CalcularNIF.pas
+* practica_07-08
